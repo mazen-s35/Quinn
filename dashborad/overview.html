@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>لوحة التحكم</title>
+</head>
+
+<body>
+    <div class="containerr">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <span class="title">كوين</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./overview.html">
+                        <span class="title">نظرة عامة</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./add-course.html">
+                        <span class="title">اضافة كورس</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./add-employee.html">
+                        <span class="title">اضافة موظف</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./add-specialty.html">
+                        <span class="title">اضافة تخصص</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <main class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logout">
+                    <a href="../login.html" class="btn">تسجيل خروج</a>
+                </div>
+            </div>
+            <div class="cards-container">
+                <div class="cards">
+                    <h2>10</h2>
+                    <p>موظفين</p>
+                </div>
+                <div class="cards">
+                    <h2>5</h2>
+                    <p>تخصصات</p>
+                </div>
+                <div class="cards">
+                    <h2>20</h2>
+                    <p>كورسات</p>
+                </div>
+        </main>
+        </div>
+
+        <script>
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector(".navigation");
+            let main = document.querySelector('.main');
+
+            toggle.onclick = () => {
+                navigation.classList.toggle('active');
+                main.classList.toggle('active')
+            }
+        </script>
+</body>
+
+</html>
